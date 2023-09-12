@@ -1,0 +1,36 @@
+.scrollup {
+    position: fixed;
+    right: 2.5rem;
+    bottom: 20%;
+    background-color: var(--title-color);
+    padding:0.8rem 1rem;
+    border-radius: 0.5rem;
+    z-index: var(--z-tooltip);
+    transition: .4s;
+    animation: scrollup 3s ease-in-out infinite;
+    cursor: pointer;
+}
+
+.scroll__icon {
+    color: var(--container-color);
+    font-size: 1.5rem;
+}
+
+i {
+    color: #fff;
+    transform: scale(2);
+}
+
+@keyframes scrollup {
+    0% {
+        transform: translateY(0);
+    }
+
+    30% {
+        transform: translateY(-0.8rem);
+    }
+}
+
+.show-scroll {
+    bottom: 3rem;
+}

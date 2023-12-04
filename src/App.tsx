@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import "./App.css"
 import LoadingScreen from './components/loadingScreen/LoadingScreen';
-import Header from './components/header/Header';
+// import Header from './components/header/Header';
 import Home from './components/home/Home';
 import About from './components/about/About';
 import Projects from './components/projects/Projects';
@@ -33,7 +33,7 @@ function App() {
     <>
       <LoadingScreen />
       <main>
-        <Header />
+        {/* <Header /> */}
         <Home />
         <About />
         <Projects />

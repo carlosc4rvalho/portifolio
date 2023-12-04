@@ -67,6 +67,7 @@
         padding: 1.5rem;
         align-items: center;
         gap: 2rem;
+        height: 100dvh;
     }
 
     .containerMe {
@@ -89,6 +90,7 @@
         padding: 1.5rem;
         align-items: center;
         gap: 2rem;
+        height: 100dvh;
     }
 
     .containerMe {

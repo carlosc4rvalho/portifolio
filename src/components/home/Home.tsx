@@ -5,9 +5,10 @@ import Header from "../header/Header";
 
 const Home: React.FC = () => {
     return (
-        <>
-            <Header />
-            <main className={styles.container}>
+            <main className={styles.height}>
+                <Header />
+               <div className={styles.container}>
+
                 <div className={styles.containerMe}>
                     <h1 className={styles.title}>
                         Carlos Carvalho
@@ -24,8 +25,8 @@ const Home: React.FC = () => {
                 <picture className={styles.containerImg}>
                     <img src="https://avatars.githubusercontent.com/u/110244419?v=4" alt="Avatar" />
                 </picture>
+               </div>
             </main>
-        </>
     )
 }
 

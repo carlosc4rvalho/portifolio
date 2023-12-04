@@ -1,17 +1,9 @@
-/* tenho q melhorar isso  */
-
-.height {
-    display: flex;
-    flex-direction: column;
-    height: 100dvh;
-}
-
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5rem;
-    margin-top: 275px;
+    height: 90dvh;
 }
 
 .containerMe {

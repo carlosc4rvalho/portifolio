@@ -1,0 +1,41 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100dvh;
+    background-color: var(--body-secondary-color);
+}
+
+.background1 {
+    background: url('https://dennissnellenberg.com/assets/img/device-iphone13.png') center center no-repeat;
+    background-size: contain;
+    width: 20vw;
+    height: 30vh;
+}
+
+.background2 {
+    background: url('https://dennissnellenberg.com/assets/img/device-mbp-15-nonotch.png') center center no-repeat;
+    background-size: contain;
+    width: 30vw;
+    height: 100vh;
+}
+
+
+.background3 {
+    background: url('https://dennissnellenberg.com/assets/img/device-macpro-higher.png') center center no-repeat;
+    background-size: contain;
+    width: 30vw;
+    height: 100vh;
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 100dvh;
+        background-color: var(--body-secondary-color);
+    }
+}
+

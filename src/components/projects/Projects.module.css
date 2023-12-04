@@ -1,0 +1,70 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 100dvw;
+  transition: transform 0.5s ease;
+}
+
+.row::-webkit-scrollbar {
+  width: 0;
+}
+
+video {
+  cursor: pointer;
+  opacity: .9;
+  transform: scale(1);
+  transition: transform 0.5s ease;
+}
+
+video:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.title {
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-semi-bold);
+  color: var(--title-color-dark);
+}
+
+/*============== RESPONSIVE TYPOGRAPHY ===============*/
+
+@media screen and (max-width: 576px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    width: 100dvh;
+    transition: transform 0.5s ease;
+  }
+
+  video {
+    cursor: pointer;
+    opacity: .9;
+    transform: scale(.8);
+    transition: transform 0.5s ease;
+  }
+
+  video:hover {
+    opacity: 1;
+    transform: scale(.9);
+  }
+}

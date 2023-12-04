@@ -1,15 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import "./App.css"
 import LoadingScreen from './components/loadingScreen/LoadingScreen';
-import Dashboard from './components/dashboard/Dashboard';
-import CursorBall from './components/cursorBall/CursosBall';
+import Header from './components/header/Header';
 import Home from './components/home/Home';
 import About from './components/about/About';
-import Skills from './components/skills/Skills';
 import Projects from './components/projects/Projects';
-import Contact from './components/contact/Contact';
+import Section from './components/section/Section';
 import Footer from './components/footer/Footer';
-import ScrollUp from './components/scrollup/ScrollUp';
 
 function App() {
   const [lastScrollTop, setLastScrollTop] = useState(0);
@@ -35,17 +32,14 @@ function App() {
   return (
     <>
       <LoadingScreen />
-      <main className="main">
-        <Dashboard />
-        <CursorBall />
+      <main>
+        <Header />
         <Home />
         <About />
-        <Skills />
         <Projects />
-        <Contact />
+        <Section />
+        <Footer />
       </main>
-      <Footer />
-      <ScrollUp />
     </>
   );
 }

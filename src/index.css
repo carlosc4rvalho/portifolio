@@ -1,13 +1,144 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*=============== VARIABLES CSS LIGHT AND DARK THEME ===============*/
+:root {
+  /*========== Colors ==========*/
+  --primary-color: #101010;
+
+  --body-color-light: rgb(255, 255, 255);
+  --body-secondary-color-light: rgb(223, 223, 223);
+
+  --body-color-dark: #0D1117;
+  --body-secondary-color-dark: #7a9cc0 ;
+  
+  --title-color: rgb(117, 117, 117);
+  --title-color: rgb(79, 79, 79);
+  --text-color: rgb(0, 0, 0);
+  --text-color-dark: rgb(101, 101, 101);
+
+  /*========== Font and typography ==========*/
+  --body-font: 'Montserrat', 'Poppins', sans-serif;
+
+  /*========== Font Size ==========*/
+  --big-font-size: 4.25rem;
+  --h1-font-size: 3.5rem;
+  --h2-font-size: 2.5rem;
+  --h3-font-size: 1.25rem;
+  --h4-font-size: 1.15rem;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.8rem;
+
+  /*========== Font weight ==========*/
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+
+  /*========== Border color ==========*/
+  --border-color: rgb(117, 117, 117);
+
+  /*========== Default Theme ==========*/
+  --body-color: var(--body-color-light);
+  --body-secondary-color: var(--body-secondary-color-light) ;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-color: #7a9cc0;
+    --body-color: var(--body-color-dark);
+    --body-secondary-color: var(--body-secondary-color-dark) ;
+    --title-color-dark: #fff;
+  }
+}
+
+::selection {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+/*=============== RESET STYLE ===============*/
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: var(--body-font);
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--body-color);
+  font-size: var(--normal-font-size);
+  color: var(--text-color);
+  height: 100dvh;
+  overflow-x: hidden;
+}
+
+button {
+  cursor: pointer;
+}
+
+
+hr {
+  border-color: #000;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*============== RESPONSIVE TYPOGRAPHY ===============*/
+
+@media screen and (max-width: 576px) {
+  :root {
+    /*========== Font Size ==========*/
+    --big-font-size: 2.5rem;
+    --h1-font-size: 1.75rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --h4-font-size: 1rem;
+    --normal-font-size: 0.9rem;
+    --small-font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  :root {
+    /*========== Font Size ==========*/
+    --big-font-size: 3rem;
+    --h1-font-size: 1.75rem;
+    --h2-font-size: 1.1rem;
+    --h3-font-size: 1rem;
+    --h4-font-size: 1rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.9rem;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  :root {
+    /*========== Font Size ==========*/
+    --big-font-size: 3.5rem;
+    --h1-font-size: 2.5rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --h4-font-size: 1.15rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.8rem;
+  }
 }

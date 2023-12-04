@@ -1,0 +1,73 @@
+.header {
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem 5rem;
+    color: var(--title-color-dark);
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 100%;
+}
+
+.logo {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-semi-bold);
+    color: var(--title-color-dark);
+}
+
+.navMenu {
+    display: flex;
+    gap: 1.25rem;
+}
+
+.item {
+   font-size: var(--h4-font-size);
+   font-weight: var(--font-medium);
+   color: var(--title-color-dark)
+}
+
+.item:hover {
+    color: var(--primary-color);
+}
+
+.menuHamburger {
+    display: none;
+    cursor: pointer;
+}
+
+/*============== RESPONSIVE TYPOGRAPHY ===============*/
+
+@media screen and (max-width: 576px) {
+    .header {
+        display: flex;
+        justify-content: center;
+        padding: 1.5rem;
+    }
+
+    .navMenu {
+        display: none;
+    }
+
+    .menuHamburger {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .header {
+        display: flex;
+        justify-content: center;
+        padding: 1.5rem;
+    }
+    
+    .navMenu {
+        display: none;
+    }
+
+    .menuHamburger {
+        display: flex
+    }
+  }

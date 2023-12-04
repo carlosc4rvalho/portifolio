@@ -1,18 +1,29 @@
-import React from 'react';
-import "./home.css";
-import Data from "./Data";
+import React from "react";
+import styles from "./Home.module.css";
+import Button from "../button/Button";
 
-const Home = () => {
-  return (
-    <section className="home__section" id="home">
-        <div className="home__container">
-            <div className="home__content">
-                <Data/>
-                <div className="home__img"></div>
+const Home: React.FC = () => {
+    return (
+        <main className={styles.container}>
+            <div className={styles.containerMe}>
+                <h1 className={styles.title}>
+                    Carlos Carvalho
+                </h1>
+                <h2 className={styles.subtitle}>Front-End Developer</h2>
+
+                <p className={styles.paragraph}>
+                    Olá, sou Carlos Carvalho, estudante de Sistemas de Informação no IFPR, atualmente no 6º semestre.
+                </p>
+
+                <Button buttonText={"Conheça Minha História"} />
             </div>
-        </div>
-    </section>
-  )
+
+            <picture className={styles.containerImg}>
+                <img src="https://avatars.githubusercontent.com/u/110244419?v=4" alt="Avatar" />
+            </picture>
+
+        </main>
+    )
 }
 
 export default Home;

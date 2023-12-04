@@ -1,8 +1,13 @@
+.height {
+    display: flex;
+    flex-direction: column;
+    height: 100dvh;
+}
+
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100dvh;
     gap: 5rem;
 }
 
@@ -67,7 +72,6 @@
         padding: 1.5rem;
         align-items: center;
         gap: 2rem;
-        height: 100dvh;
     }
 
     .containerMe {
@@ -90,7 +94,6 @@
         padding: 1.5rem;
         align-items: center;
         gap: 2rem;
-        height: 100dvh;
     }
 
     .containerMe {

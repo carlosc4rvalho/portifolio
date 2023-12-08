@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff;
+}
+
+.background {
+    background: url('https://dennissnellenberg.com/assets/img/device-mbp-15-nonotch.png') center center no-repeat;
+    background-size: contain;
+    width: 80%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.background div {
+    overflow: hidden;
+    width: 72%;
+    height: 90%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* .background div img {
+    width: auto;
+    height: auto;
+} */
